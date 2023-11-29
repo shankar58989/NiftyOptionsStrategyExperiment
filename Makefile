@@ -16,7 +16,7 @@ dependencies-colab:
 	git init
 	@echo "Installing dependencies..."
 	poetry install --no-ansi
-	poetry run pre-commit install
+	# poetry run pre-commit install
 	
 env-colab: dependencies-colab
 	@echo "Virtual environment information"
