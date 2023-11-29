@@ -10,6 +10,17 @@ dependencies:
 env: dependencies
 	@echo "Activating virtual environment..."
 	poetry shell
+	
+dependencies-colab: 
+	@echo "Initializing Git..."
+	git init
+	@echo "Installing dependencies..."
+	poetry install --no-ansi
+	poetry run pre-commit install
+	
+env-colab: dependencies-colab
+	@echo "Virtual environment information"
+	poetry env info
 
 tests:
 	pytest
