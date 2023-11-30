@@ -5,10 +5,18 @@ description = ""
 authors = ["Shankar Narayanan G R"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
 dvc = "^2.10.0"
 hydra-core = "^1.1.1"
 pdoc3 = "^0.10.0"
+jupyterlab = "^4.0.9"
+numpy = "^1.26.2"
+pandas = "^2.1.3"
+matplotlib = "^3.8.2"
+seaborn = "^0.13.0"
+nsepy = "^0.8"
+datetime = "^5.3"
+scikit-learn = "^1.3.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
