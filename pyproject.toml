@@ -17,6 +17,7 @@ nsepy = "^0.8"
 datetime = "^5.3"
 scikit-learn = "^1.3.2"
 xgboost = "^2.0.2"
+nsepython = "^2.8"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^6.2.5"

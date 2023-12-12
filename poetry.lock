@@ -2870,6 +2870,22 @@ requests = "*"
 six = "*"
 
 [[package]]
+name = "nsepython"
+version = "2.8"
+description = "Python library for NSE India APIs"
+optional = false
+python-versions = "*"
+files = [
+    {file = "nsepython-2.8-py3-none-any.whl", hash = "sha256:783953960fc7c4588dc02722a786ebdba7fd788479cda5a2e627b5359f1b8b2d"},
+    {file = "nsepython-2.8.tar.gz", hash = "sha256:ee7b4ac4b0580f5cd23d25323d6558038857184943dd178a3e88fdd407beefc3"},
+]
+
+[package.dependencies]
+pandas = "*"
+requests = "*"
+scipy = "*"
+
+[[package]]
 name = "numpy"
 version = "1.26.2"
 description = "Fundamental package for array computing in Python"
@@ -4785,4 +4801,4 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "d93ba20e15d99fb2fbf7bc58d96a71200a2e8b171d4e8b467df82031f1f5eb86"
+content-hash = "16d0291009381277fb54035384ef02f8c19e6971dbfb44bf2f30ff0b8e944e9b"
