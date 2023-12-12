@@ -15,10 +15,21 @@ dependencies-colab:
 	@echo "Initializing Git..."
 	git init
 	@echo "Installing dependencies..."
-	poetry install --no-ansi
+	poetry install --without mydesktop --no-ansi
 	# poetry run pre-commit install
 	
 env-colab: dependencies-colab
+	@echo "Virtual environment information"
+	poetry env info
+
+dependencies-asmsl: 
+	@echo "Initializing Git..."
+	git init
+	@echo "Installing dependencies..."
+	poetry install --without mydesktop
+	# poetry run pre-commit install
+	
+env-asmsl: dependencies-asmsl
 	@echo "Virtual environment information"
 	poetry env info
 
