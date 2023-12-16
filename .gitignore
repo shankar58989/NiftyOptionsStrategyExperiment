@@ -93,4 +93,5 @@ target/
 outputs
 
 # Data
-data/
+*.csv
+*.xlsx
