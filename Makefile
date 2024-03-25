@@ -15,7 +15,7 @@ dependencies-colab:
 	@echo "Initializing Git..."
 	git init
 	@echo "Installing dependencies..."
-	poetry install --without AsmslEnvDep --with ColabEnvDep --no-ansi
+	poetry install --without DesktopEnvDep,AsmslEnvDep --with ColabEnvDep --no-ansi
 	# poetry run pre-commit install
 	
 env-colab: dependencies-colab
@@ -26,7 +26,7 @@ dependencies-asmsl:
 	@echo "Initializing Git..."
 	git init
 	@echo "Installing dependencies..."
-	poetry install --without ColabEnvDep --with AsmslEnvDep
+	poetry install --without DesktopEnvDep,ColabEnvDep --with AsmslEnvDep
 	# poetry run pre-commit install
 	
 env-asmsl: dependencies-asmsl
