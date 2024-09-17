@@ -1,4 +1,5 @@
-# test_poetry_project
+# NiftyOptionsStrategyExperiment
+
 This is a line I have added to this file
 
 ## Tools used in this project
